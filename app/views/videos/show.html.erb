@@ -1,0 +1,15 @@
+<h1>Especificaciones</h1>
+
+<h2>Video Title: <%= @video.title %></h2>
+<p>Video Category: <%= @video.category %></p>
+<p>Published Year: <%=  %></p>
+
+<%# <%= link_to "Delete",
+  videos_path(@video),
+  data: {turbo_method: :delete, turbo_confirm: "are you shure?"}
+%>
+
+<%= link_to "Delete",
+  video_path(@video),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
